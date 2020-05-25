@@ -44,6 +44,12 @@ h2{
 	text-align: center;
 }
 
+h3{
+	font-size: 22px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
 p {
 	font-size: 16px;
 	word-wrap: normal;
@@ -93,15 +99,22 @@ p {
 	
 }
 
+.card1 {
+	width: 60%; 
+	border: 0;
+	align-items: center;
+	margin: 0 auto;
+	text-align: left;
+	margin-bottom: 6em;
 
-
+}
 
 .card-deck {
-	width: 70%; 
+	width: 75%; 
 	margin: auto;
 	text-align: center;
 	box-shadow: none;
-	margin-bottom: 3em;
+	margin-bottom: 8em;
 	
 }
 
@@ -114,7 +127,11 @@ p {
     left: 50%;
 }
 
-
+.card-title{
+	text-align: center;
+	font-size: 23px;
+	
+}
 
 .card-text{
 	text-align: left;
@@ -123,7 +140,7 @@ p {
 }
 
 .card-body{
-	margin-bottom: 2em;
+	margin-bottom: 0.5em;
 }
 
 
@@ -155,7 +172,7 @@ p {
     height: 0.25em;
     background-color: #E0C5A4;
     border-radius: 10px;
-	margin-bottom: 2.6em;
+	margin-bottom: 5em;
 	align-items: center;
 }
 .contact {
