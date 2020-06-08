@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+    integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+    crossorigin="anonymous"></script>
+  <script src="scripts/index.js"></script>
+  <link rel="stylesheet" href="styles/Database.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+  <title>Database</title>
+</head>
+
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>International Students & the Labor Market</h1>
+    </div>
+  </div>
+  <div class="card">
+    <h2><b>Overview</b></h2>
+    <p>Today’s US labor market is highly competitive and suffers from a lack of transparency. International students
+      seeking full time employment are at a further disadvantage in comparison to their domestic peers as they are
+      subject to strict and circuitous foreign labor laws, visa constraints and a lack of information. While labor laws
+      are at the discretion of regulatory bodies, there is an opportunity to meet the demand for information in the
+      labor market available to international students.</p>
+    <p>The application will present international students with information on the success rate an employer has in
+      sponsoring foreign labor visas, how students can navigate through the regulatory constraints set by the Department
+      of Labor and the skill sets that are in high demand in the US labor market.</p>
+    <p>You can find the web application and try it <a
+        href="https://penny-ni.shinyapps.io/Group13_project/?_ga=2.19052792.1733717315.1590099068-707621765.1587940826"><b>Here</b></a>
+    </p>
+  </div>
+  <div class="card">
+    <h2><b>Conceptual & Logical Design </b></h2>
+    <p>Simplicity is at the core of the design in order to allow for clarity in content, robustness of data and
+      performance of the application. The design combines the H1B data and corresponding employer data from the USCIS
+      and Department of Labor websites.
+      The following steps were taken to convert the raw CSV data into relational tables:
+    </p>
+  </div>
+  <div class="card">
+    <p>1. Explore the existing data and finalize the tables and attributes that are relevant to the app use case:</p>
+  </div>
+  <div class="card">
+    <p>2. Normalize the data in 1NF
+      Extract information City, State, Zip code from Address data such as 8601 N Central Expy, Dallas, TX 75080 to
+      City:Dallas, State:TX, Zip code:75080</p>
+  </div>
+  <div class="card">
+    <p>3. Formulate new attributes , i.e. location latitude and longitude from the worksite</p>
+  </div>
+  <div class="card">
+    <p>4. Create a new scheme and table structure once the basic design was ready</p>
+  </div>
+  <div class="card">
+    <p>5. Clean the data before adding constraints:</p>
+    <ul>
+      <li>Removing some NULLs, partial / corrupted records</li>
+      <li>Remove duplicate rows – used Common Table Expression for identifying the duplicates</li>
+      <li>Keeping only H1B cases for which there is employer information</li>
+    </ul>
+  </div>
+  <div class="card">
+    <p>6. One to Many relationships:</p>
+    <ul>
+      <li>EMPLOYER contains information about the Employee</li>
+      <li>H1b_Data contains information about the H1B case</li>
+      <li>The one to many relationships were established by setting up the PK on Employer attribute of EMPLOYER, and
+        foreign key employer_name on H1B_Data</li>
+    </ul>
+  </div>
+  <div class="card">
+    <p>7. Added UPDATE and DELETE constraints on the foreign key relationship in order to support consistency of data
+      between tables. Key elements of this included:</p>
+    <ul>
+      <li>Removing any row from Employer table, results in a Cascade effect by removing rows corresponding Employer
+        records from H1B_Data table</li>
+      <li>Updating Employer name on Employer table, results in Cascading by updating the employer name on H1B_Data table
+      </li>
+    </ul>
+  </div>
+
+
+
+  <div class="card">
+    <h2><b>Shiny UI Design</b></h2>
+    <p>The <b>Introduction tab </b>displays a dashboard of general statistics on the H1B employment visa. Features: </p>
+    <ul>
+      <li>Total number of applications</li>
+      <li>Number of Companies</li>
+      <li>Approval Rating</li>
+    </ul>
+    <img src="assets/project/Database/1.png" class="center">
+    <br>
+
+    <p>The <b>Analytics tab</b> displays a table of employers and their successful H1B petitions, a bar chart to
+      visualize the success rate and a filter to limit the number of companies and a map. Features: </p>
+    <img src="assets/project/Database/2.png" class="center"><br>
+    <ul>
+      <li>Map: corresponding to the company name, job title, year entered on the Search Engine Tab, fetch the data and
+        build the points on the map according to the latitude and longitude
+        Show the relevant job title when clicked on the marked location.</li><br>
+      <img src="assets/project/Database/3.png" class="center">
+      <br>
+      <li>Top Company: Top ‘X’ companies who filed H1B</li><br>
+      <img src="assets/project/Database/4.png" class="center">
+      <br>
+      <li>Top Job: Top ‘X’ jobs for H1B</li><br>
+      <img src="assets/project/Database/5.png" class="center">
+      <br>
+    </ul>
+    <p>Under the <b>Setting (CRUD)</b> tab create, read, update and delete functions are built in. Features: </p>
+    <ul>
+      <li>Create(Insert query): Enter relevant details to fill EMPLOYER and H1B_DATA from the GUI Insert into EMPLOYER
+        table first and then into H1B_DATA. Order of insertion is important as we have PK in EMPLOYER and FOREIGN Key
+        Employer_name in H1B_DATA</li><br>
+      <img src="assets/project/Database/6.png" class="center">
+      <br>
+      <li>Read(Select query): We use the select statements in number of features such as our Search tab, Map tab, Check
+        delete and Check update and analytics tab for showing Number of successful applications,
+        Number of companies, approval rating etc.</li><br>
+      <li>Update (Update query): In case Employer name is changed, or Employer address.
+        We have CASCADE update on Employer name</li><br>
+      <img src="assets/project/Database/7.png" class="center">
+      <br>
+      <li>Update (Update query): In case Employer name is changed, or Employer address.
+        We have CASCADE update on Employer name</li><br>
+      <img src="assets/project/Database/8.png" class="center">
+    </ul>
+    <br>
+    <p><b>Other Resources</b></p>
+    <img src="assets/project/Database/9.png" class="center">
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+</body>
+
+</html>
