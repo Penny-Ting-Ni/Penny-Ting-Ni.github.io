@@ -4,234 +4,278 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
-    integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="./scripts/jqcloud.min.js"></script>
   <script src="scripts/index.js"></script>
-  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/timeline.css">
+  <link rel="stylesheet" href="./styles/jqcloud.css">
   <title>Penny Ni</title>
 </head>
 
 <body>
-  <div class="hero-image">
-    <div class="hero-text">
-      <h1>I am Penny</h1>
-      <br>
-      <br>
-      <button type="button" class="btn btn-hero"> <a href="#aboutme"> ABOUT ME </a></button>
-      <button type="button" class="btn btn-hero"> <a href="#project">PROJECT</a> </button>
-      <button type="button" class="btn btn-hero"> <a href="#experience">EXPERIENCE</a> </button>
-      <button type="button" class="btn btn-hero"> <a href="about_me.html">CONTACT </a></button>
-      <div class="social-container">
-        <ul class="social-menu">
-          <li>
-            <a href="mailto:tingni.penny@gmail.com">
-              <img src="assets/Contact/email icon.png" class="icon-size" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/penny-ni/">
-              <img src="assets/Contact/In-White-121px-R.png" class="icon-size" />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/Penny-Ting-Ni">
-              <img src="assets/Contact/GitHub-Mark-Light-120px-plus.png" class="icon-size" />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Summary -->
-
-  <h2 id="aboutme">ABOUT ME</h2>
-  <center>
-    <div class="board"></div>
-  </center>
-  <div class="card1">
-    <h3>Hi there! Nice to meet you! I'm Ting Ni. I go by Penny.</h3>
-    <h3 font style="line-height:1.5;">I'm currently a new grad with MS in <b>Business Analytics</b> degree from SMU. I am knowledgeable with
-      predictive modeling, model validation, performance tracking with tools, and statistical
-      approaches. Through various projects, I have trained myself to be a <b>data professional</b> with experience in building
-      end-to-end solutions. </h3>
-    <h3 font style="line-height:1.5;">I like to ask “why” and “what if”, and always willing to try new things. Besides Data filed, I’ve also had
-      academic and professional experience in Finance and Marketing areas. I anticipate to proceed my career towards a fast-pace working environment with opportunities to always challenge
-      myself to achieve higher objectives.</h3>
-    <h3>Don't hesitate to reach out to me through the channels <a href="about_me.html" style="color:#2B6CA3">HERE</a> !</h3>
-    <h3><b>*Tools</b>: SQL, R, Python, Tableau, Power BI, AWS, Alteryx, HTML, CSS, GIT, Spark, VBA, KNIME</h3>
-  </div>
-
-  <!-- Projects  -->
-  <h2 id="project"> PROJECTS</h2>
-  <center>
-    <div class="board"></div>
-  </center>
-  <br>
-  <div class="card-deck">
-    <div class="card">
-      <img src="assets/project/DV-f.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h4 class="card-title" , style="color:#2B6CA3">Data Visualization</h4>
-        <p class="card-text"><b>Overview</b>: Helped local company, PICKUP, to develop a new market launch
-          strategy. Cleaned and analyzed data, built and represented dashboards for the client using Tableau,
-          illustrating geospatial, customer, sales, and operation insights.</p>
-        <p class="card-text"><b>Skills</b>: Alteryx, Tableau, Excel, Decision Model</p>
-        <a target="_blank" href="https://penny-ting-ni.github.io/Data%20visualization" class="view-demo"><b>View
-            Detail</b></a>
-      </div>
-    </div>
-    <div class="card">
-      <img src="assets/project/DB2.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h4 class="card-title" , style="color:#2B6CA3">Database Design & Web Application Development</h4>
-        <p class="card-text"><b>Overview</b>: Developed a web application that provides H1B information and analyst.
-          Built conceptual and logical database design, then use R Shiny created the application
-          that connects with the database to perform CRUD operations and analytics.</p>
-        <p class="card-text"><b>Skills</b>: SQL Server, AWS, R, R Shiny, HTML, CSS</p>
-        <a target="_blank" href="https://penny-ting-ni.github.io/Database" class="view-demo"><b>View Detail</b></a>
-      </div>
-    </div>
-    <div class="card">
-      <img src="assets/project/APA.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h4 class="card-title" , style="color:#2B6CA3">Predictive Analytics</h4>
-        <p class="card-text"><b>Overview</b>: Structured analysis from start to finish, Implemented the most common
-          models for introductory econometric analysis. Practice these methods in R and interpreting the output to help make
-          decisions. </p>
-        <p class="card-text"><b>Skills</b>: R, ggplot, Regression Models(OLS, Polynomial, Logistic, etc.) GLMs, Tobit
-        </p>
-        <a target="_blank" href="https://github.com/Penny-Ting-Ni/Predictive-Analytics" class="view-demo"><b>View
-            Detail</b></a>
-      </div>
-    </div>
-  </div>
-  <br>
-  <div class="card-deck">
-    <div class="card">
-      <img src="assets/project/APM.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h4 class="card-title" , style="color:#2B6CA3">Probability Models</h4>
-        <p class="card-text"><b>Overview</b>: Using models to represent data-generating processes. Choosing models and
-          applied Bayesian methods for inference, classification and forecasting. Modeling integrated customer purchase
-          and retention processes, and use those models to estimate expected customer lifetime value.</p>
-        <p class="card-text"><b>Skills</b>: Skills: R, Models(Geometric, beta-binomial, BG/BB, NBD, ENT, etc.)</p>
-        <a target="_blank" href="https://github.com/Penny-Ting-Ni/Probability-Models" class="view-demo"><b>View
-            Detail</b></a>
-      </div>
-    </div>
-    <div class="card">
-      <img src="assets/project/BI.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h4 class="card-title" , style="color:#2B6CA3">Business Intelligence</h4>
-        <p class="card-text"><b>Overview</b>: Built and use Data Warehouses, experienced in Dimensional Design, ETL
-          Development, Analytic SQL Programming. Generated reports to provide suggestions and observations about
-          business trends, empowering decision-makers to act.</p>
-        <p class="card-text"><b>Skills</b>: SQL Server, Azure,Visual Studio, Power BI</p>
-        <a target="_blank" href="https://github.com/Penny-Ting-Ni/Business-Intelligence" class="view-demo"><b>View
-            Detail</b></a>
-      </div>
-    </div>
-    <div class="card">
-      <img src="assets/project/bd.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h4 class="card-title" , style="color:#2B6CA3">Big Data</h4>
-        <p class="card-text"><b>Overview</b>: Knowledged with RDDs, Dataframe and other Data Engineering & Data Science
-          skills using Spark. Experience in any big data pipelines, architectures and data sets. Famirly with cloud
-          services and stream processing.</p>
-        <p class="card-text"><b>Skills</b>: Skills: Spark, Hadoop, Azure, AWS, Data Lake, Scikit-Learn, HTML, KNN, CNNs
-        </p>
-        <a target="_blank" href="https://github.com/Penny-Ting-Ni/Big-data" class="view-demo"><b>View Detail</b></a>
-      </div>
-    </div>
-  </div>
-  <br />
-  <h2 id="experience">EXPERIENCE</h2>
-  <center>
-    <div class="board"></div>
-  </center>
-  <br>
-  <div class="card-deck">
-    <div class="card">
-      <a
-        href="https://www.smu.edu/cox/degrees-and-programs/ms-in-business-analytics?utm_source=google&utm_medium=cpc&utm_content=trg_masters_support&utm_campaign={campaign}&utm_keyword=smu%20msba&utm_term=trgsizmek&gclid=CjwKCAjw2a32BRBXEiwAUcugiNQ6DYPHsFuF2-vkgj1My6QAEDsufv86uJS1JoTOqyis1kOBSZme8hoCMdQQAvD_BwE">
-        <img src="assets/experience/SMU.png" class="card-img">
-      </a>
-      <div class="card-body">
-        <h4 class="card-text" style="color:#2B6CA3"><b>08/2019 - 05/2020</b></h4>
-        <p class="card-text"><b>M.S. in Business Analytics at SMU (Southern Methodist University)</p></b>
-        <p class="card-text">Graduated from the STEM M.S. in Business Analytics program, core courses including Data
-          Mining, Machine Learning, Big Data and Applied Data Science.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="assets/experience/gap.png" class="card-img">
-      <div class="card-body">
-        <h4 class="card-text" style="color:#2B6CA3"><b>08/2017 - 05/2019</b></h4>
-        <p class="card-text"><b>Volunteering and World Exploration</p></b>
-        <p class="card-text"> Took time traveled and experienced the world, volunteered in Chinese teaching program.
-          Joined CAP program at Princeton University for interest and personal growth.</p>
-      </div>
-    </div>
-    <div class="card">
-      <a href="http://www.ct108.com/">
-        <img src="assets/experience/108.png" class="card-img">
-      </a>
-      <div class="card-body">
-        <h4 class="card-text" style="color:#2B6CA3"><b>01/2016 - 07/2017</b></h4>
-        <p class="card-text"><b>Branding and Marketing Coordinator</p></b>
-        <p class="card-text">Redefined brand positioning and strategy, managed campaigns and acquired 50 million new
-          users by leading a cross-functional team in five different departments.</p>
-      </div>
-    </div>
-    <div class="card">
-      <a href="https://www.uber.com/">
-        <img src="assets/experience/uber2.jpg" class="card-img">
-      </a>
-      <div class="card-body">
-        <h4 class="card-text" style="color:#2B6CA3"><b>03/2015 - 01/2016</b></h4>
-        <p class="card-text"><b>Marketing Intern (China Launch Team)</p></b>
-        <p class="card-text">Assisted with marketing initiatives, increased new sign-ups from 0 to 20,000+. Applied
-          metrics and reports on the the effectiveness of campaigns in relation to established KPIs.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="contact">
-    <p class="h1-5">Contact</p>
-    <div class="board"></div>
-    <div class="social-container2">
-      <ul class="social-menu">
-        <li>
-          <a href="mailto:tingni.penny@gmail.com">
-            <img src="assets/Contact/email icon.png" class="icon-size" />
-          </a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutme">Intro</a>
         </li>
-        <li>
-          <a href="https://www.linkedin.com/in/penny-ni/">
-            <img src="assets/Contact/In-White-121px-R.png" class="icon-size" />
-          </a>
+        <li class="nav-item">
+          <a class="nav-link" href="#tech">Tech</a>
         </li>
-        <li>
-          <a href="https://github.com/Penny-Ting-Ni">
-            <img src="assets/Contact/GitHub-Mark-Light-120px-plus.png" class="icon-size" />
-          </a>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#project">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
+  </nav>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>Hi, I'm Penny!</h1>
+      <p class="lead">Data Analyst | Business Analyst</p>
+    </div>
   </div>
+  <div class="container">
+    <section id="aboutme">
+      <h1>About Me</h1>
+      <p>
+        I'm currently a new grad with MS in <b>Business Analytics</b> degree from SMU.
+        I am knowledgeable with predictive modeling, model validation, performance tracking with tools, and statistical
+        approaches.
+        Through various projects, I have trained myself to be a <b>data professional</b> with experience in building
+        end-to-end solutions.
+      </p>
+    </section>
+    <section id="tech">
+      <h1>Tech</h1>
+      <div id="word-cloud"></div>
+    </section>
+    <section id="experience">
+      <h1>Experience</h1>
+      <div class="timeline">
+        <div class="container">
+          <div class="pic">
+            <img alt="" src="./assets/experience/SMULogoRrgb.png">
+          </div>
+          <div class="content">
+            <h2>2019</h2>
+            <h5>Southern Methodist University</h5>
+            <h5>Cox School of Business</h5>
+            <p>Started my masters and graduated in 2020 with a degree in Business Analytics. 
+              Core courses include Data Mining, Machine Learning, Big Data, and Applied Data Science.</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="pic">
+            <img alt="" src="./assets/experience/gap.jpg">
+          </div>
+          <div class="content">
+            <h2>2017</h2>
+            <h5>Volunteering and World Exploration</h5>
+            <p>Took time traveled and experienced the world, volunteered in Chinese teaching program. Joined CAP
+              program at Princeton University for interest and personal growth.</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="pic">
+            <img alt="" src="./assets/experience/108.png">
+          </div>
+          <div class="content">
+            <h2>2016</h2>
+            <h5>Zhejiang Changtang Network Co., Ltd.</h5>
+            <p>Redefined brand positioning and strategy, managed campaigns and acquired 50 million new users by
+              leading a cross-functional team in five different departments.</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="pic">
+            <img alt="" src="./assets/experience/Uber-Asset-Logo-34.jpg">
+          </div>
+          <div class="content">
+            <h2>2015</h2>
+            <h5>Uber Technologies, Inc.</h5>
+            <p>Assisted with various marketing initiatives including implementations of new events, such as
+              Uber-OnDemand and Uber Coffee-Map, increasing business partners to 50+ and increased new sign-ups from
+              0 to 20,000+.</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="pic">
+            <img alt="" src="./assets/experience/The_logo_of_Hubei_University_of_Economics.jpg">
+          </div>
+          <div class="content">
+            <h2>2012</h2>
+                <h5>Hubei University of Economics</h5>
+                <h5>College of Law & Business</h5>
+                <p>Started my undergrad studies and graduated with a B.S. in Finance in 2016.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project">
+      <h1>Projects</h1>
+    </br>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Data Visualization</h4>
+              <img src="assets/project/data_visualization.jpg" class="card-img-top" alt="">
+              <p class="card-text text-center"><b>Tech</b>: Alteryx, Tableau, Excel, and Decision Models.</p>
+              <p class="card-text">
+              <ul>
+                <li>Helped local company, PICKUP, to develop a new market launch strategy.</li>
+                <li>Cleaned and analyzed data, built and represented dashboards for the client using Tableau,
+                  illustrating geo spatial, customer, sales, and operation insights.</li>
+              </ul>
+              <p class="learn-more">
+                <a href="./data_visualization.html" class="btn btn-primary" target="_blank">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Database Design & Web App Development</h4>
+              <img src="assets/project/database.jpg" class="card-img-top" alt="">
+              <p class="card-text text-center"><b>Tech</b>: SQL Server, AWS, R, R Shiny, and HTML/CSS.</p>
+              <p class="card-text">
+              <ul>
+                <li>Developed a web application that provides H1B information and analytics.</li>
+                <li>Built conceptual and logical database design, then use R Shiny created the application that connects
+                  with the database to perform CRUD operations and analytics.</li>
+              </ul>
+              </p>
+              <p class="learn-more">
+                <a href="./database.html" class="btn btn-primary" target="_blank">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Predictive Analytics</h4>
+              <img src="assets/project/predictive_analytics.jpg" class="card-img-top" alt="">
+              <p class="card-text text-center"><b>Tech</b>: R, ggplot, GLMs, Tobit, and Regression Models (OLS,
+                Polynomial, and Logistic)</p>
+              <p class="card-text">
+              <ul>
+                <li>Structured analysis from start to finish, Implemented the most common models for introductory
+                  econometric analysis.</li>
+                <li>Practice these methods in R and interpreting the output to help make decisions.</li>
+              </ul>
+              </p>
+              <p class="learn-more">
+                <a href="https://github.com/Penny-Ting-Ni/Predictive-Analytics" class="btn btn-primary" target="_blank">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Big Data</h4>
+              <img src="assets/project/big_data.jpg" class="card-img-top" alt="">
+              <p class="card-text text-center"><b>Tech</b>: Tech: Spark, Hadoop, Azure, AWS, Data Lake, Scikit-Learn,
+                HTML, KNN, and CNNs.</p>
+              <p class="card-text">
+              <ul>
+                <li>Knowledgeable in RDDs, Dataframe and other Data Engineering & Data Science Tech
+                  using Spark.</li>
+                <li>Experience in any big data pipelines, architectures and data sets.</li>
+                <li>Cloud services and stream processing.</li>
+              </ul>
+              </p>
+              <p class="learn-more">
+                <a href="https://github.com/Penny-Ting-Ni/Big-data" class="btn btn-primary" target="_blank">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Business Intelligence</h4>
+              <img src="assets/project/business_intelligence.png" class="card-img-top" alt="">
+              <p class="card-text text-center"><b>Tech</b>: SQL Server, Azure,Visual Studio, and Power BI</p>
+              <p class="card-text">
+              <ul>
+                <li>Built and use Data Warehouses, experienced in Dimensional Design, ETL Development, Analytic SQL
+                  Programming.</li>
+                <li>Generated reports to provide suggestions and observations about
+                  business trends, empowering decision-makers to act.</li>
+              </ul>
+              </p>
+              <p class="learn-more">
+                <a href="https://github.com/Penny-Ting-Ni/Business-Intelligence" class="btn btn-primary" target="_blank">Learn
+                  more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Probability Models</h4>
+              <img src="assets/project/probability_models.jpg" class="card-img-top" alt="">
+              <p class="card-text text-center"><b>Tech</b>: R, and Models (geometric, beta-binomial, BG/BB, NBD, and
+                ENT).</p>
+              <p class="card-text">
+              <ul>
+                <li>Using models to represent data-generating processes.
+                  Choosing models and applied Bayesian methods for inference, classification and forecasting.</li>
+                <li>Modeling integrated customer purchase and retention processes, and use those models to estimate
+                  expected customer lifetime value.</li>
+              </ul>
+              </p>
+              <p class="learn-more">
+                <a href="https://github.com/Penny-Ting-Ni/Probability-Models" class="btn btn-primary" target="_blank">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1>Contact</h1>
+      <ul class="social-menu">
+        <li>
+          Email: <a href="mailto:tingn@smu.com" target="_blank">tingn@smu.com</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/penny-ni/" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://github.com/Penny-Ting-Ni" target="_blank">Github</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <section class="footer bottom">
+    <div class="text-center">© 2020 Ting Ni. All rights reserved.</div>
+    </nav>
 </body>
 
 </html>
